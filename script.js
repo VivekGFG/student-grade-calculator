@@ -1,8 +1,7 @@
 function calculateGrades() {
-    // Clear previous error messages
+   
     clearErrors();
 
-    // Retrieve and validate input values
     const name = document.getElementById('name').value.trim();
     const studentClass = document.getElementById('class').value.trim();
     const section = document.getElementById('section').value.trim();
@@ -57,7 +56,7 @@ function calculateGrades() {
         return;
     }
 
-    // Calculate total marks, percentage, and grade
+    
     const totalMarks = subject1 + subject2 + subject3 + subject4 + subject5;
     const percentage = (totalMarks / 500) * 100;
 
